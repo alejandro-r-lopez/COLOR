@@ -1,7 +1,6 @@
 body {
     display: grid;
     justify-content: center;
-    margin-top: 25%;
 }
 
 .container {
@@ -14,5 +13,5 @@ body {
 }
 
 .color {
-    background-color: black;
+    background-color: red;
 }
