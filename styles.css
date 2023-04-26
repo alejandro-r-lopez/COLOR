@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+.container {
+    display: flex;
+}
+
+.block {
+    border: solid 0.1px;
+    padding: 20px;
+}
+
+.color {
+    background-color: black;
+}
