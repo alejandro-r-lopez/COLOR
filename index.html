@@ -6,299 +6,349 @@
     </head>
 
     <body>
+        <div class="createSection">
+            <form id="rgbForm" class="form">
+                <input
+                    id="red"
+                    name="red"
+                    type="number"
+                    min="0"
+                    max="255"
+                    placeholder="RED"
+                    required
+                />
+                <input
+                    id="green"
+                    name="green"
+                    type="number"
+                    min="0"
+                    max="255"
+                    placeholder="GREEN"
+                    required
+                />
+                <input
+                    id="blue"
+                    name="blue"
+                    type="number"
+                    min="0"
+                    max="255"
+                    placeholder="BLUE"
+                    required
+                />
+                <button id="createButton" type="button">create color</button>
+            </form>
+
+            <p id="newColor" class="newColor">RGB</p>
+
+            <div id="newColorBlock" class="newColorBlock"></div>
+        </div>
+
         <button id="reset">reset</button>
 
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
 
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
 
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-        </div>
-        <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
 
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
+
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
+
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
+
         <div class="container">
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
-            <div class="block" id="block" onclick="generateColor()"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
         </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
+        <div class="container">
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+            <div class="block" id="block"></div>
+        </div>
+
         <script src="main.js"></script>
     </body>
 </html>
